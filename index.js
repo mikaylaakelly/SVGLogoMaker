@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { Triangle, Circle, Square } = require('./lib/shapes.js');
+const path = require('path');
 
 const questions = [
     {
@@ -56,6 +57,8 @@ function writeToFile(filename, answers) {
         </svg>`;
     }
 
+
+
     fs.writeFile(filename, svgEl, (err) => {
         err ? console.error(err) : console.log("Successfully generated SVG Logo!");
     });
@@ -64,3 +67,15 @@ function writeToFile(filename, answers) {
 inquirer.prompt(questions).then((answers) => {
     writeToFile('logo.svg', answers);
 });
+
+
+// const filePath = path.join(__dirname, 'Examples', filename);
+
+//     fs.writeFile(filePath, svgEl, (err) => {
+//         err ? console.error(err) : console.log(`Successfully generated ${filename} in the 'Examples' folder!`);
+//     });
+// }
+
+// inquirer.prompt(questions).then((answers) => {
+//     writeToFile('logo.svg', answers);
+// });
