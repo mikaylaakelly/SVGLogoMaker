@@ -35,7 +35,7 @@ To use this application you will need to install the necessary items using nmp i
 
 ## Usage
 You will need to install and understand the necessary things, including inquirer@8.2.4, Jest, Node.js, VSCode, and fs. This application will not be deployed to a live link so an instructional video will be added.
-Video: "https://drive.google.com/file/d/1nqIVVCgmJZaPWEmsTZUFcEm_KP1_oaw2/preview" width="640" height="480"
+Video: https://drive.google.com/file/d/1nqIVVCgmJZaPWEmsTZUFcEm_KP1_oaw2/view
 ## License
     
 This project is licensed under the MIT license.
