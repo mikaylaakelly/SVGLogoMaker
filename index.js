@@ -6,23 +6,23 @@ const questions = [
     {
         type: 'input',
         name: 'text',
-        message: 'Enter up to 3 letters for the logo text:',
+        message: 'Enter up to 3 letters for the logo text',
     },
     {
         type: 'input',
         name: 'textColor',
-        message: 'Enter the color you would like the text to be:',
+        message: 'Enter the color you would like the text to be',
     },
     {
         type: 'list',
         name: 'shape',
-        message: 'Choose from the list of shapes:',
+        message: 'Choose from the list of shapes',
         choices: ['Triangle', 'Circle', 'Square'],
     },
     {
         type: 'input',
         name: 'shapeColor',
-        message: 'Enter what color you would like the shape to be:',
+        message: 'Enter what color you would like the shape to be',
     },
 ];
 
@@ -57,7 +57,7 @@ function writeToFile(filename, answers) {
     }
 
     fs.writeFile(filename, svgEl, (err) => {
-        err ? console.error(err) : console.log("Successfully generated SVG!");
+        err ? console.error(err) : console.log("Successfully generated SVG Logo!");
     });
 }
 
