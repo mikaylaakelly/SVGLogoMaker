@@ -59,23 +59,23 @@ function writeToFile(filename, answers) {
 
 
 
-    fs.writeFile(filename, svgEl, (err) => {
-        err ? console.error(err) : console.log("Successfully generated SVG Logo!");
-    });
-}
-
-inquirer.prompt(questions).then((answers) => {
-    writeToFile('logo.svg', answers);
-});
-
-
-// const filePath = path.join(__dirname, 'Examples', filename);
-
-//     fs.writeFile(filePath, svgEl, (err) => {
-//         err ? console.error(err) : console.log(`Successfully generated ${filename} in the 'Examples' folder!`);
+//     fs.writeFile(filename, svgEl, (err) => {
+//         err ? console.error(err) : console.log("Successfully generated SVG Logo!");
 //     });
 // }
 
 // inquirer.prompt(questions).then((answers) => {
 //     writeToFile('logo.svg', answers);
 // });
+
+
+const filePath = path.join(__dirname, 'Examples', filename);
+
+    fs.writeFile(filePath, svgEl, (err) => {
+        err ? console.error(err) : console.log(`Successfully generated ${filename} in the 'Examples' folder!`);
+    });
+}
+
+inquirer.prompt(questions).then((answers) => {
+    writeToFile('Trianglelogo.svg', answers);
+});
